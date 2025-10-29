@@ -16,7 +16,7 @@ def main_page(request): # функция представления главно
     footer8=p8[0].p8footer
     p9 = Nine_page.objects.all()
     context = { 'page1' : p1, 'page2': p2, 'page4':p4, 'p1_img':p1_img, 'p4title':p4title, 'title':title8, 'p8_img':img8, 'content':content8, 'footer':footer8, 'page8':p8, 'page9':p9, 'page10':p10 }
-    return render(request, 'catalog/main_page.html', context)
+    return render(request, 'catalog/index.html', context)
 
 def second_page(request):
     p2 = Second_page.objects.all()
