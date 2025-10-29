@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="кухни на заказ, изготовление кухонь, мебель на заказ, кухни Октябрьский, мебельная мастерская, индивидуальные кухни, дизайн кухонь">
+    <meta name="description" content="Мебельная мастерская с 9-летним опытом. Изготавливаем кухни на заказ по индивидуальным размерам и дизайну. Гарантия качества, экологичные материалы, бесплатный замер.">
+    <title>{% block title %} Кухни на заказ — Мебельная мастерская {% endblock title %}</title>
+    <link href="{% static 'css/base_style.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'catalog/img/logo.png' %}">
+    <!-- Подключение Fira Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Подключение Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+<a name="верх"></a>
+    <nav>
+        <a href="/"><img src="{% static 'catalog/img/logo.png' %}" alt="Логотип" class="logo"></a>
+        <div class="Navigatpanel">
+            <a href="#Этапы">Этапы работы</a>
+            <a href="#Процесс">Процесс</a>
+            <a href="#Гарантии">Гарантии</a>
+            <a href="#Ассортимент">Ассортимент</a>
+            <a href="#Контакты">Контакты</a>
+        </div>
+    </nav>
+    <div class="afternav">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <footer>
+        <div class="footer_left">
+            <a name="Контакты"></a>
+            <h2>Наши контакты:</h2>
+            <h3>Телефон: <a href="tel:+79216743096">+7 921-674-30-96</a> (Олег Иванович)</h3>
+            <h3>VK: <a href="https://vk.com/im?sel=-218864932" target="_blank">Написать сообщение</a></h3>
+            <h3>Адрес: Архангельская обл., Устьянский район, п. Октябрьский, ул. Заводская, 5А, 2 этаж, павильон 2</h3>
+            <p>Ⓒ 2024 Мебельная мастерская. Все права защищены.</p>
+            <a class="last_button" href="#верх">↑ Наверх ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процесс изготовления</title>
+    <link href="{% static 'catalog/css/therd_page_style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .brands-section {
+            background-color: #333333;
+            padding: 30px 0;
+            overflow: hidden;
+        }
+        .brands-title {
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .swiper-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .swiper-wrapper {
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+        }
+        .swiper-slide a {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            outline: none;
+            border: none;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        .swiper-slide a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        .swiper-slide a:focus {
+            outline: none;
+            text-decoration: none !important;
+        }
+        .swiper-slide a::after {
+            display: none !important;
+        }
+        .swiper-slide img {
+            max-width: 120px;
+            max-height: 80px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="part3">
+        <img src="{% static 'catalog/img/kitchen_process.jpg' %}" alt="Процесс изготовления кухни">
+        <div class="part3_1">
+            <a name="Ассортимент"></a>
+            <h1>Подбираем материалы в разных ценовых категориях и согласовываем стоимость</h1>
+           <!--<ul>
+                <li>Бесплатный замер и консультация</li>
+                <li>Широкий выбор материалов и фурнитуры</li>
+                <li>Четкое соблюдение сроков</li>
+            </ul>-->
+        </div>
+    </div>
+    <!-- Блок с брендами -->
+    <div class="brands-section">
+        <div class="brands-title">
+            Работаем с лучшими материалами
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Слайды с логотипами и ссылками
+                <div class="swiper-slide">
+                    <a href="https://kedr-f.ru/#slide2" target="_blank">
+                        <img src="{% static 'catalog/img/brand1.jpg' %}" alt="Бренд KEDR">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://dtcrussia.ru/products/" target="_blank">
+                        <img src="{% static 'catalog/img/brand2.png' %}" alt="Бренд DTC">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://fenix-comfort.ru/#facades_fundermax" target="_blank">
+                        <img src="{% static 'catalog/img/brand3.jpg' %}" alt="Бренд Fenix">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://facadetrading.ru/" target="_blank">
+                        <img src="{% static 'catalog/img/brand5.png' %}" alt="Бренд Akam">
+                    </a>
+                </div> -->
+                <div class="swiper-slide">
+                    <a href="https://extravert.ru/product_cat/ldsp/?ysclid=mgutci2lsr353318369" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand8.jpeg' %}" alt="Бренд 8">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.boyard.biz/" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand9.png' %}" alt="Бренд 9">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://nordeco.design/?ysclid=mgusmfbdha512124434" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand11.png' %}" alt="Бренд 11">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.blum.com/md/ru/" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand12.png' %}" alt="Бренд 12">
+                    </a>
+                </div>
+            </div>
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="brands-section">
+        <div class="brands-title">
+            Работаем с лучшими фасадами
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://agt-panel.ru/fasady?ysclid=mgusebn1wb182365248" target="_blank">
+                        <img src="{% static 'catalog/img/brand6.png' %}" alt="Бренд 6">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://idm-eterno.ru/?ysclid=mh94dbnvl4257973704#" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand7.jpg' %}" alt="Бренд 7">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.kastamonuentegre.com/ru_ru/tovary/evogloss" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="{% static 'catalog/img/brand10.jpg' %}" alt="Бренд 10">
+                    </a>
+                </div>
+            </div>
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 10,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    }
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+        });
+    </script>
+</body>
+</html>

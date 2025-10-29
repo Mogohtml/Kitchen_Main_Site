@@ -1,0 +1,110 @@
+/*  */
+/* общие стили для странички 4 */
+.p4 {
+    background-color:#3b3d3e;
+    color: white;
+    height: auto;
+    padding:100px 40px 50px 40px;
+}
+
+/* стили для нумерованного списка */
+.p4 ol {
+    padding-left:45px;
+    counter-reset: cont1;
+}
+/* стили для элементов списка */
+.p4 li {
+    padding:10px;
+    font-size:15px;
+    border-bottom: 1px solid #CECECE;
+    position:relative;
+    list-style: none; /* Убираем исходные маркеры */
+}
+.p4 li::before {
+    content: counter(cont1);
+    counter-increment: cont1;
+    font-size: 50px;
+    color: #CBA782;
+    position:absolute;
+    top:10px;
+    left:0;
+    transform: translateX(-50px);
+}
+/* стили для маркеров списка */
+.p4 li::marker{
+    font-size: 50px;
+    color: #CBA782;
+    position:absolute;
+    display:block;
+    bottom:0;
+    border: 1px solid white;
+    /*display:absolute; попытка реализвоать код из https://ru.stackoverflow.com/
+    top: calc(50%); */
+    /*display: flex; попытка реализовать подсказку из чата
+    align-items: center; */
+}
+/* стили для последнего элемента списка */
+.p4 li:last-child {
+    margin-bottom:50px;
+}
+
+/* стили для первого элемента списка */
+.p4 li:first-child {
+    padding-top:40px;
+}
+
+/* стиль для класса list_title */
+.list_title {
+    padding-bottom:10px;
+}
+
+/* Стили для текста и ссылок внутри блока */
+.list_content {
+    display: inline-block;
+    color: #CECECE;
+    padding: 10px 0 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Стили для ссылок внутри текста */
+.list_link {
+    color: #CBA782; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркиание */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+    font-weight: 500; /* Жирность текста */
+    border-bottom: 1px solid transparent; /* Подготовка для подчеркивания при наведении */
+    padding-bottom: 2px;
+}
+
+.list_link:hover {
+    color: #E0C097; /* Цвет при наведении */
+    border-bottom: 1px solid #E0C097; /* Подчеркивание при наведении */
+}
+
+/* Стили для ссылок на скачивание */
+a[download] {
+    display: inline-block;
+    color: #CBA782;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid #CBA782;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+a[download]:hover {
+    background-color: #CBA782;
+    color: white;
+}
+
+
+
+
+/* попытка выровнять маркер списка - но не сработало
+ol.p4_list li {
+    bottom:0;
+} */

@@ -1,0 +1,51 @@
+{% extends "html/base.html" %}
+{% load static %}
+{% block content %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка на замер</title>
+    <link href="{% static 'catalog/css/form_style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="forma">
+    <div class="forma1">
+        <h1>Записаться на замер</h1>
+        <h2>Оставьте свои контактные данные, и наши специалисты свяжутся с вами в рабочее время (с 9:00 до 21:00, понедельник-суббота).</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="input_obviosly">
+                <label for="Name">Ваше имя*</label>
+                <input type="text" id="Name" name="name" required placeholder="Иван">
+            </div>
+            <div class="input">
+                <label for="Отчество">Отчество (при необходимости)</label>
+                <input type="text" id="Отчество" name="otchestvo" placeholder="Иванович">
+            </div>
+            <div class="input">
+                <label for="Телефон">Номер телефона*</label>
+                <input type="tel" id="Телефон" name="phonenumber" required placeholder="+7 999 999-99-99">
+            </div>
+            <div class="input">
+                <label for="E-mail">Электронная почта</label>
+                <input type="email" id="E-mail" name="email" placeholder="example@mail.ru">
+            </div>
+            <div class="input">
+                <label for="messenger">Удобный мессенджер</label>
+                <input type="text" id="messenger" name="messenger" placeholder="VK, WhatsApp, Telegram">
+                <input type="text" name="nickname" placeholder="Никнейм или номер">
+            </div>
+            <div class="input_obviosly">
+                <p>Нажимая кнопку "Отправить", вы соглашаетесь на обработку персональных данных.</p>
+                <label for="Согласие"><input type="checkbox" id="Согласие" required> Я согласен на обработку персональных данных</label>
+            </div>
+            <p>Поля, отмеченные <span style="color:red">*</span>, обязательны для заполнения.</p>
+            <div class="form_button">
+                <input type="submit" value="Отправить заявку">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+{% endblock content %}

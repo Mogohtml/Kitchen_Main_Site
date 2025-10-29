@@ -1,0 +1,84 @@
+.part3 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3d3e;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.part3 img {
+    width: 100%;
+}
+
+.part3_1 {
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.part3_1 h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.part3_1 ul {
+    padding: 0;
+    list-style-type: disc; /* Маркер в виде точки */
+    list-style-position: inside;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px; /* Отступ для маркеров */
+}
+
+.part3_1 li {
+    padding: 8px 0;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px; /* Отступ для текста относительно маркера */
+}
+
+.part3_2 {
+    background-color: white;
+    color: black;
+    padding: 40px 0;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    text-align: center;
+}
+
+/* Стили для ссылок */
+.swiper-slide a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    outline: none;
+    border: none;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+.swiper-slide a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.swiper-slide a:focus {
+    outline: none;
+}
+
+/* Убираем синюю рамку у изображений */
+.swiper-slide img {
+    border: none;
+    outline: none;
+}

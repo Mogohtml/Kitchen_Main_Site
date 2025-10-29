@@ -1,0 +1,55 @@
+.p7 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #3b3d3e;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.p7 h1 {
+    font-size: 45px;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.p7 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.p7 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+.p7 li::before {
+    content: url('../img/list_white.png');
+    position: relative;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+}
+
+.p7_list_title {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.p7_list_content {
+    color: #cecece;
+    font-size: 20px;
+    margin-left: 45px;
+}

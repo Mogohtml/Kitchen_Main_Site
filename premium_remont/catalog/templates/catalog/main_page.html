@@ -1,0 +1,23 @@
+{% extends "html/base.html" %}
+{% load static %}
+{% block content %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'catalog/css/styles.min.css' %}" rel="stylesheet">
+</head>
+<body>
+{% include "catalog/first_page.html" %}
+{% include "catalog/second_page.html" %}
+{% include "catalog/therd_page.html" %}
+{% include "catalog/4th_page.html" %}
+{% include "catalog/5th_page.html" %}
+{% include "catalog/6th_page.html" %}
+{% include "catalog/7th_page.html" %}
+{% include "catalog/8th_page.html" %}
+{% include "catalog/9th_page.html" %}
+{% include "catalog/10th_page.html" %}
+{% include "catalog/11th_page.html" %}
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,18 @@
+.portfolio {
+    color:white;
+    background-color:#3b3d3e;
+    padding:50px;
+}
+
+.portfolio h3 {
+    font-size:50px;
+    text-align: center;
+
+}
+
+.portfolio img {
+    width:20%;
+    height:20%;
+    margin:5px;
+}
+
