@@ -1,6 +1,10 @@
-from django.http import HttpResponse
+import os
+
+from django.http import HttpResponse, Http404
 from django.shortcuts import render
 from .models import *
+
+
 # Create your views here.
 def main_page(request): # функция представления главной страницы сайта, в ней собраны все элементы
     p1 = First_page.objects.all() # вызоб объектов из всех моделей, задействованных на странице
@@ -143,3 +147,16 @@ def form(request): #Функция представления отображаю
         return render(request, 'catalog/form.html') # вывод страницы catalog/form.html
     else:
         return render(request, 'catalog/form.html') # если запрос не POST - то тоже выводим страницы catalog/form.html
+
+
+def download_pdf(request):
+    # Путь к вашему файлу относительно папки static
+    file_path = os.path.join(settings.STATICFILES_DIRS[0], 'catalog', 'document_1.pdf')
+
+    if os.path.exists(file_path):
+        with open(file_path, 'rb') as fh:
+            response = HttpResponse(fh.read(), content_type="application/pdf")
+            # Этот заголовок заставляет браузер скачивать файл, а не открывать его
+            response['Content-Disposition'] = 'attachment; filename="document_1.pdf"'
+            return response
+    raise Http404
