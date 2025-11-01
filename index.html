@@ -1,23 +1,602 @@
-{% extends "html/base.html" %}
-{% load static %}
-{% block content %}
+
+<!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="{% static 'catalog/css/styles.min.css' %}" rel="stylesheet">
+    <meta name="keywords" content="кухни на заказ, изготовление кухонь, мебель на заказ, кухни Октябрьский, мебельная мастерская, индивидуальные кухни, дизайн кухонь">
+    <meta name="description" content="Мебельная мастерская с 9-летним опытом. Изготавливаем кухни на заказ по индивидуальным размерам и дизайну. Гарантия качества, экологичные материалы, бесплатный замер.">
+    <title> Кухни на заказ — Мебельная мастерская </title>
+    <link href="/static/css/base_style.css" rel="stylesheet">
+    <link rel="icon" href="/static/catalog/img/logo.png">
+    <!-- Подключение Fira Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Подключение Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
 <body>
-{% include "catalog/first_page.html" %}
-{% include "catalog/second_page.html" %}
-{% include "catalog/therd_page.html" %}
-{% include "catalog/4th_page.html" %}
-{% include "catalog/5th_page.html" %}
-{% include "catalog/6th_page.html" %}
-{% include "catalog/7th_page.html" %}
-{% include "catalog/8th_page.html" %}
-{% include "catalog/9th_page.html" %}
-{% include "catalog/10th_page.html" %}
-{% include "catalog/11th_page.html" %}
+<a name="верх"></a>
+    <nav>
+        <a href="/"><img src="/static/catalog/img/logo.png" alt="Логотип" class="logo"></a>
+        <div class="Navigatpanel">
+            <a href="#Этапы">Этапы работы</a>
+            <a href="#Процесс">Процесс</a>
+            <a href="#Гарантии">Гарантии</a>
+            <a href="#Ассортимент">Ассортимент</a>
+            <a href="#Контакты">Контакты</a>
+        </div>
+    </nav>
+    <div class="afternav">
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/catalog/css/styles.min.css" rel="stylesheet">
+</head>
+<body>
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изготовление кухонь на заказ</title>
+    <link href="/static/catalog/css/first_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p1">
+    <img src="/static/catalog/img/kitchen_main.jpg" alt="Кухни на заказ">
+    <div class="p1_text">
+        <p class="title">ИЗГОТОВЛЕНИЕ КУХОНЬ НА ЗАКАЗ С 2015 ГОДА</p>
+        <h1>ВАША МЕЧТА — НАША РАБОТА!</h1>
+        <ul>
+            <li><a class="p1_text">Индивидуальный дизайн по вашим размерам и бюджету</a></li>
+            <li><a class="p1_text">Соблюдение всех сроков</a></li>
+            <li><a class="p1_text">Гарантия качества и юридическая ответственность</a></li>
+        </ul>
+    </div>
+    <div class="button1">
+        <a href="form/">
+            Заказать кухню
+        </a>
+    </div>
+    <a name="Преимущества"></a>
+</div>
 </body>
 </html>
-{% endblock content %}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Преимущества</title>
+    <link href="/static/catalog/css/second_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p2">
+    <h1>ПОЧЕМУ МЫ ЛУЧШЕ? <span style="color:#CBA782">9 ЛЕТ ОПЫТА — ЗАЛОГ КАЧЕСТВА!</span></h1>
+    <ul>
+        <li><a class="text_p2">Производим мебель без наценок магазинов и посредников</a></li>
+        <li><a class="text_p2">500+ вариантов цветов, оттенков и текстур материалов</a></li>
+        <li><a class="text_p2">Фурнитура и материалы от проверенных поставщиков</a></li>
+        <li><a class="text_p2">Экологически чистые, сертифицированные материалы (класс Е1)</a></li>
+        <li><a class="text_p2">Гарантия 1 год на всю произведённую мебель</a></li>
+        <li><a class="text_p2">Бесплатный выезд замерщика</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процесс изготовления</title>
+    <link href="/static/catalog/css/therd_page_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .brands-section {
+            background-color: #333333;
+            padding: 30px 0;
+            overflow: hidden;
+        }
+        .brands-title {
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .swiper-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .swiper-wrapper {
+            align-items: center;
+            justify-content: center;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+        }
+        .swiper-slide a {
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            outline: none;
+            border: none;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        .swiper-slide a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        .swiper-slide a:focus {
+            outline: none;
+            text-decoration: none !important;
+        }
+        .swiper-slide a::after {
+            display: none !important;
+        }
+        .swiper-slide img {
+            max-width: 120px;
+            max-height: 80px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="part3">
+        <img src="/static/catalog/img/kitchen_process.jpg" alt="Процесс изготовления кухни">
+        <div class="part3_1">
+            <a name="Ассортимент"></a>
+            <h1>Подбираем материалы в разных ценовых категориях и согласовываем стоимость</h1>
+           <!--<ul>
+                <li>Бесплатный замер и консультация</li>
+                <li>Широкий выбор материалов и фурнитуры</li>
+                <li>Четкое соблюдение сроков</li>
+            </ul>-->
+        </div>
+    </div>
+    <!-- Блок с брендами -->
+    <div class="brands-section">
+        <div class="brands-title">
+            Работаем с лучшими материалами
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Слайды с логотипами и ссылками
+                <div class="swiper-slide">
+                    <a href="https://kedr-f.ru/#slide2" target="_blank">
+                        <img src="/static/catalog/img/brand1.jpg" alt="Бренд KEDR">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://dtcrussia.ru/products/" target="_blank">
+                        <img src="/static/catalog/img/brand2.png" alt="Бренд DTC">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://fenix-comfort.ru/#facades_fundermax" target="_blank">
+                        <img src="/static/catalog/img/brand3.jpg" alt="Бренд Fenix">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://facadetrading.ru/" target="_blank">
+                        <img src="/static/catalog/img/brand5.png" alt="Бренд Akam">
+                    </a>
+                </div> -->
+                <div class="swiper-slide">
+                    <a href="https://extravert.ru/product_cat/ldsp/?ysclid=mgutci2lsr353318369" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand8.jpeg" alt="Бренд 8">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.boyard.biz/" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand9.png" alt="Бренд 9">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://nordeco.design/?ysclid=mgusmfbdha512124434" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand11.png" alt="Бренд 11">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.blum.com/md/ru/" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand12.png" alt="Бренд 12">
+                    </a>
+                </div>
+            </div>
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="brands-section">
+        <div class="brands-title">
+            Работаем с лучшими фасадами
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://agt-panel.ru/fasady?ysclid=mgusebn1wb182365248" target="_blank">
+                        <img src="/static/catalog/img/brand6.png" alt="Бренд 6">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://idm-eterno.ru/?ysclid=mh94dbnvl4257973704#" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand7.jpg" alt="Бренд 7">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.kastamonuentegre.com/ru_ru/tovary/evogloss" target="_blank"> <!-- Замените # на нужную ссылку -->
+                        <img src="/static/catalog/img/brand10.jpg" alt="Бренд 10">
+                    </a>
+                </div>
+            </div>
+            <!-- Стрелки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.swiper-container', {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 10,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    }
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Этапы изготовления кухни</title>
+    <link href="/static/catalog/css/4th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p4">
+    <a name="Этапы"></a>
+    <h1>ЭТАПЫ ИЗГОТОВЛЕНИЯ КУХНИ</h1>
+    <ol class="p4_list">
+        <li>
+            <span class="list_title" style="font-weight:bold">Замер помещения</span><br>
+            <span class="list_content">Бесплатный выезд замерщика, обсуждение пожеланий.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Выбор материалов и фурнитуры</span><br>
+            <span class="list_content">
+                500+ вариантов цветов, текстур и материалов.
+                <a class="list_link" href="#Ассортимент" target="_blank">Смотреть материалы</a>,
+                <a class="list_link" href="#Ассортимент" target="_blank">Смотреть фурнитуру</a>.
+            </span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Изготовление проекта</span><br>
+            <span class="list_content">Создание 3D-визуализации, корректировки по вашим пожеланиям.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Согласование деталей</span><br>
+            <span class="list_content">Утверждение дизайна, материалов, сроков.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Подписание договора</span><br>
+            <span class="list_content">
+                Фиксация всех деталей, сроков и стоимости.
+                <a class="list_link" href="/static/catalog/document_1.pdf" download>Скачать договор</a>
+            </span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Изготовление мебели</span><br>
+            <span class="list_content">Производство на собственном цеху.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Доставка</span><br>
+            <span class="list_content">В удобное для вас время.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Установка</span><br>
+            <span class="list_content">Сборка, монтаж кухни, подключение техники.</span>
+        </li>
+        <li>
+            <span class="list_title" style="font-weight:bold">Расчёт</span><br>
+            <span class="list_content">Оплата по договору, гарантийное обслуживание.</span>
+        </li>
+    </ol>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на замер</title>
+    <link href="/static/catalog/css/5th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p5">
+    <h1>ХОТИТЕ ЗАКАЗАТЬ КУХНЮ? ЗАПИШИТЕСЬ НА БЕСПЛАТНЫЙ ЗАМЕР!</h1>
+    <div class="button2">
+        <a href="form/">
+            Записаться на замер
+        </a>
+    </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Процесс изготовления</title>
+    <link href="/static/catalog/css/6th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page6">
+    <a name="Процесс"></a>
+    <h1>ПРОЦЕСС ИЗГОТОВЛЕНИЯ КУХНИ</h1>
+    <p>Мы сопровождаем вас на каждом этапе — от замера до установки!</p>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контроль качества</title>
+    <link href="/static/catalog/css/7th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p7">
+    <div class="p7_1" id="p7_left">
+        <h1>КОНТРОЛЬ КАЧЕСТВА НА КАЖДОМ ЭТАПЕ</h1>
+        <ul>
+            <li><span class="p7_list_title">Точный замер и проектирование.</span></li>
+            <li><span class="p7_list_title">Качественные материалы и фурнитура.</span></li>
+            <li><span class="p7_list_title">Соблюдение сроков и бюджета.</span></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О мастерской</title>
+    <link href="/static/catalog/css/8th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p8">
+    <div class="p8_content">
+        <div class="p8_content_text">
+            <h2>9 ЛЕТ ОПЫТА В РЕАЛИЗАЦИИ КУХОНЬ!</h2>
+            <p>Наша мастерская специализируется на изготовлении кухонь на заказ. Мы работаем напрямую с клиентами, без посредников, что позволяет предлагать доступные цены.</p>
+            <p>Собственное производство находится в п. Октябрьский, Устьянский район, Архангельская область. Офис расположен по адресу: Архангельская обл., Устьянский район, п. Октябрьский, ул. Заводская, 5А, 2 этаж, павильон 2.</p>
+            <p id="p8_footer">Связаться с нами можно по телефону: <a href="tel:+79216743096">+7 921-674-30-96</a> (Гончаров Олег Иванович).</p>
+        </div>
+        <div class="p8_content_img">
+            <img src="/static/catalog/img/ceh.jpg">
+        </div>
+    </div>
+    <div class="button3">
+        <a href="form/">
+            Записаться на консультацию
+        </a>
+    </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Наши работы</title>
+    <link href="/static/catalog/css/9th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p9">
+    <h1>НАШИ РАБОТЫ</h1>
+    <div class="p9_blocks">
+        <div class="p9_block">
+            <h3>Современные кухни</h3>
+            <img src="/static/catalog/img/kitchen_modern1.jpg">
+            <img src="/static/catalog/img/kitchen_modern2.jpg">
+            <img src="/static/catalog/img/kitchen_modern3.jpg">
+            <img src="/static/catalog/img/1.jpg">
+            <img src="/static/catalog/img/2.jpg">
+            <img src="/static/catalog/img/3.jpg">
+            <img src="/static/catalog/img/4.jpg">
+            <img src="/static/catalog/img/5.jpg">
+            <img src="/static/catalog/img/6.jpg">
+            <img src="/static/catalog/img/7.jpg">
+
+            <img src="/static/catalog/img/9.jpg">
+            <img src="/static/catalog/img/10.jpg">
+            <img src="/static/catalog/img/11.jpg">
+            <img src="/static/catalog/img/12.jpg">
+            <img src="/static/catalog/img/13.jpg">
+            <img src="/static/catalog/img/15.jpg">
+
+            <!--<p>ещё...</p>-->
+        </div>
+        <div class="p9_block">
+            <h3>Крашенные кухни</h3>
+            <img src="/static/catalog/img/kitchen_classic1.jpg">
+            <img src="/static/catalog/img/kitchen_classic2.jpg">
+            <img src="/static/catalog/img/kitchen_classic3.jpg">
+            <!--<p>ещё...</p>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Гарантии</title>
+    <link href="/static/catalog/css/10th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p10">
+    <a name="Гарантии"></a>
+    <h1>НАШИ ГАРАНТИИ</h1>
+    <div class="p10_blocks">
+        <div class="p10_block">
+            <img src="/static/catalog/img/garantii1.png">
+            <h3>Гарантия на сроки</h3>
+            <p>Соблюдаем все сроки, указанные в договоре.</p>
+        </div>
+        <div class="p10_block">
+            <img src="/static/catalog/img/garantii2.png">
+            <h3>Гарантия на материалы</h3>
+            <p>Используем только сертифицированные материалы класса Е1.</p>
+        </div>
+        <div class="p10_block">
+            <img src="/static/catalog/img/garantii3.png">
+            <h3>Гарантия на сборку</h3>
+            <p>Качественная сборка и установка кухни.</p>
+        </div>
+        <div class="p10_block">
+            <img src="/static/catalog/img/garantii4.png">
+            <h3>Гарантия на фурнитуру</h3>
+            <p>Фурнитура от проверенных поставщиков.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Консультация</title>
+    <link href="/static/catalog/css/11th_page_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="p11">
+    <div class="p11_left">
+        <h2>Хотите кухню своей мечты? Закажите её у профессионалов!</h2>
+        <h1>
+            <a href="form/"> Записаться на замер → </a>
+
+        </h1>
+    </div>
+    <div class="p11_right">
+        <ul>
+            <li>Индивидуальный дизайн по вашим размерам</li>
+            <li>Гарантия качества и соблюдения сроков</li>
+            <li>Лучшие цены от производителя</li>
+        </ul>
+        <p>Наши специалисты проконсультируют, ответят на вопросы и рассчитают стоимость.</p>
+        <img src="/static/catalog/img/kitchen_consult.jpg">
+        <div class="button4">
+            <a href="form/">
+                Записаться на замер
+            </a>
+        </div>
+        <div class="button4">
+            <a href="/static/catalog/document_1.pdf" download>
+                Скачать договор
+            </a>
+</div>
+
+    </div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
+
+    </div>
+    <footer>
+        <div class="footer_left">
+            <a name="Контакты"></a>
+            <h2>Наши контакты:</h2>
+            <h3>Телефон: <a href="tel:+79216743096">+7 921-674-30-96</a> (Олег Иванович)</h3>
+            <h3>VK: <a href="https://vk.com/im?sel=-218864932" target="_blank">Написать сообщение</a></h3>
+            <h3>Адрес: Архангельская обл., Устьянский район, п. Октябрьский, ул. Заводская, 5А, 2 этаж, павильон 2</h3>
+            <p>Ⓒ 2024 Мебельная мастерская. Все права защищены.</p>
+            <a class="last_button" href="#верх">↑ Наверх ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
