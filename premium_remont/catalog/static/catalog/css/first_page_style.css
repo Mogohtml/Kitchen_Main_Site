@@ -26,6 +26,74 @@
         height: auto;
         padding: 20px;
     }
+
+     .p1_text p.title {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        background-color: rgba(59, 61, 62, 0.9);
+        color: white;
+        font-size: 18px;
+        z-index: 10;
+    }
+    .p1_text h1 {
+        padding: 10px;
+        font-size: 24px;
+    }
+    .p1_text li {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .button1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Для экранов шириной МЕНЕЕ 400px (маленькая мобильная версия) */
+@media (max-width: 500px) {
+    .afternav {
+        /* На мобильной версии отступ может потребоваться больше */
+        margin-top: 220px; /* Оставьте 90px или увеличьте при необходимости */
+    }
+
+    .p1 img {
+        width: 100%; /* У вас уже есть этот стиль, он правильный */
+        height: auto;
+    }
+    .p1_text p.title {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 25px; /* Уменьшаем внутренние отступы */
+        background-color: rgba(59, 61, 62, 0.9);
+        color: white;
+        font-size: 8px; /* Уменьшаем размер шрифта */
+        line-height: 1.1; /* Уменьшаем межстрочный интервал */
+        z-index: 10;
+    }
+
+    .p1_text h1 {
+        padding: 10px;
+        font-size: 10px; /* Уменьшаем размер основного заголовка */
+    }
+
+    .p1_text li {
+        padding: 10px 20px;
+        font-size: 8px; /* Уменьшаем размер шрифта в списке */
+    }
+    .button1 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 220px;
+    }
 }
 
 
@@ -92,7 +160,7 @@
     border-radius: 50%;
     z-index: 8;
     border: 5px solid #696969;
-    box-shadow: 5px -5px 1px rgba(0, 0, 0, .7);
+
     text-align: center;
 }
 
