@@ -39,11 +39,31 @@ nav {
     white-space: nowrap; /* Предотвращает перенос текста внутри ссылки */
 }
 
+.logo-container {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по верхнему краю */
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+    padding-right: 10px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 22px; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    white-space: nowrap;
+    margin-button: 20px; /* Поднимаем текст чуть выше */
+}
+
 /* Медиазапрос для мобильных устройств (например, экраны шириной до 768px) */
 @media (max-width: 768px) {
     nav {
         flex-direction: column; /* На мобильных экранах располагаем логотип и меню вертикально */
-        align-items: flex-start; /* Выравниваем по левому краю */
+        align-items: center; /* Выравниваем по левому краю */
     }
 
     .Navigatpanel {
@@ -56,6 +76,22 @@ nav {
         padding: 10px 0; /* Увеличиваем отступы для удобства нажатия */
         border-bottom: 1px solid #4a4d4e; /* Добавляем разделитель */
         width: 100%;
+    }
+
+    .logo-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .logo {
+        height: 50px;
+        padding-right: 8px;
+    }
+
+    .logo-text {
+        font-size: 16px; /* Уменьшенный размер шрифта для мобильных устройств */
+        margin-top: 7px;
     }
 }
 
