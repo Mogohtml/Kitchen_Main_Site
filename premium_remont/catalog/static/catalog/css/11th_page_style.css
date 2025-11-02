@@ -3,6 +3,7 @@
     height: auto;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 .p11_left {
@@ -90,18 +91,22 @@
 }
 
 @media (max-width: 500px) {
+    .p11_right {
+        padding-bottom: 120px; /* Увеличиваем внутренний отступ снизу для расширения блока */
+    }
+
     .button4 {
     position: absolute;
     background-color: #CBA782;
     right: 20%;
-    bottom: 5%;
+    bottom: calc(35% + 70px); /* Опускаем кнопку на 70px вниз */
     width: 140px;
     height: 140px;
     border-radius: 50%;
     z-index: 8;
     border: 3px solid white;
     text-align: center;
-    top: 250px;
+
 }
 }
 
@@ -156,6 +161,7 @@
     .p5 {
         height: 600px;
         background-size: 100% 600px;
+        overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
     }
 
     .p5 h1 {

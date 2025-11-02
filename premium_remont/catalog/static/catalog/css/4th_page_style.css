@@ -5,6 +5,7 @@
     color: white;
     height: auto;
     padding:100px 40px 50px 40px;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 /* стили для нумерованного списка */

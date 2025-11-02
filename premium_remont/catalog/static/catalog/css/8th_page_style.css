@@ -5,6 +5,7 @@
     color: white;
     padding: 50px 0;
     text-align: center;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 .p8 h1 {

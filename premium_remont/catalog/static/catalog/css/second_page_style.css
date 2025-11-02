@@ -1,5 +1,6 @@
 .p2 {
     margin-bottom:50px;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 .p2 li {

@@ -106,6 +106,7 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
 }
 
 .p1 img {
