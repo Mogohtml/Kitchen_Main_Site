@@ -119,32 +119,31 @@
 }
 
 /* Медиа-запросы для маленьких экранов */
-
 @media (max-width: 768px) {
     .p1 {
         text-align: center;
+        position: relative; /* Добавляем относительное позиционирование */
     }
-
     .p1 img {
         width: 100%;
         height: auto;
         float: none;
         padding: 20px;
     }
-
+    .p1_text {
+        margin-top: 100px; /* Добавляем отступ сверху для текста */
+        padding-top: 20px;
+    }
     .p1_text p.title {
         font-size: 20px;
     }
-
     .p1_text h1 {
         font-size: 30px;
     }
-
     .p1_text li {
         padding: 15px 30px;
         font-size: 16px;
     }
-
     .button1 {
         left: 50%;
         transform: translateX(-50%);
@@ -152,11 +151,11 @@
         width: 100px;
         height: 100px;
     }
-
     .button1 a {
         font-size: 14px;
         padding-top: 30%;
     }
+
 
     .p5 {
         height: 600px;
