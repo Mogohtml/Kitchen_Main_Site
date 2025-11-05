@@ -3,11 +3,12 @@ import os
 from django.http import HttpResponse, Http404
 from django.shortcuts import render
 from .models import *
+from premium_remont import settings
 
 
 # Create your views here.
 def main_page(request): # функция представления главной страницы сайта, в ней собраны все элементы
-    p1 = First_page.objects.all() # вызоб объектов из всех моделей, задействованных на странице
+    p1 = First_page.objects.all() # вызов объектов из всех моделей, задействованных на странице
     p1_img=p1[0].img
     p2 = Second_page.objects.all()
     p4=Fourth_page.objects.all()

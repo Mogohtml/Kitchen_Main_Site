@@ -19,6 +19,7 @@ urlpatterns = [
     path('10th/', tenth_page),
     path('11th/', eleventh_page),
     path('form/', form, name='form'),
+    path('download_pdf/', download_pdf),
 ]
 
 
